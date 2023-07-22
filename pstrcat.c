@@ -18,7 +18,9 @@ int main(int argc, char *argv){
 }
 
 void strcat(char *s, char *t){
-	while (*++s);
+	if (*s){
+		while (*++s);
+	}
 	while (*s++ = *t++);
 }
 
